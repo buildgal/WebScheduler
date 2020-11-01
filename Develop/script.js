@@ -15,7 +15,7 @@ let currentHour= arrMomentTime[0];
   //  c.css("background-color", "yellow");
 //}
 
-for (i=0; timeSlot[i]<timeSlot.length; i++){
+for (let i=0; i<timeSlot.length; i++){
     if (timeSlot[i]===currentHour){
         let inputField=$("#"+i);
         inputField.css("background-color", "yellow");
