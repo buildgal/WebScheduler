@@ -12,13 +12,11 @@ let arrMomentTime= momentTime.split();
 if (workDayTime>arrMomentTime){ 
     //need to change the color of the box 
     alert("displays if current time"+ arrMomentTime)
-    
 }
 else{
     alert("dont do anything");
 
 }
-
     
 /*
 current time 1pm- 9-12: grey and 2-5: green 
