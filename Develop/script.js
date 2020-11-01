@@ -16,15 +16,13 @@ let currentHour= arrMomentTime[0];
 //}
 
 for (i=0; timeSlot[i]<timeSlot.length; i++){
-    let plannerTime=timeSlot[i];
-    let inputField= $("#"+i);
-    console.log(plannerTime);
-    console.log(inputField);
-    if (plannerTime===currentHour){
+    if (timeSlot[i]===currentHour){
+        let inputField=$("#"+i);
         inputField.css("background-color", "yellow");
-        
     }
+
 }
+
 
 /*
 
