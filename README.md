@@ -32,6 +32,6 @@ https://buildgal.github.io/WebScheduler/
 
 ## Screenshot 
 
-![image](../Develop/2020-11-01 (8).png)
+![image](./Develop/image_2.png)
 
-![image](./Develop/2020-11-01 (7).png)
+![image](./Develop/image_1.png)
