@@ -36,3 +36,37 @@ for (let i=0; i<timeSlot.length; i++){
 //need an onclick function 
 //key and value from the local stroage 
 //display the local storage 
+//lets firs save the first button 
+
+let saveBtn= $(".input-group-append");
+let inputSlot= $(".form-control");
+let timeBtn= $(".input-group-text");
+
+let key=timeBtn.value;
+let value=inputSlot.value;
+window.localStorage;
+
+
+saveBtn.on("click", function() {
+    
+    setLS(timeBtn, inputSlot);
+    getLS(timeBtn);
+    storeInLocalStorage(timeBtn, inputSlot);
+
+
+
+});
+
+//setting the local storage 
+function setLS(key,value){
+    window.localStorage.setItem(key, JSON.stringify(value));
+
+}
+
+//changing the HTML values 
+function getLS(key){
+    let value= window.localStorage.getItem(key);
+    let setString= JSON.parse(value);
+    return setString;
+
+}
