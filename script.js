@@ -82,51 +82,51 @@ nineBtns.on("click", function() {
     
 });
 
-tenBtns.on("click", function() { 
+tenBtn.on("click", function() { 
     setLS(inputHr10,ten);
     getLS(inputHr10);
     
 });
 
-elevenBtns.on("click", function() { 
+elevenBtn.on("click", function() { 
     setLS(inputHr11, eleven);
     getLS(inputHr11);
     
 });
 
 
-tweleveBtns.on("click", function() { 
+twelveBtn.on("click", function() { 
     setLS(inputHr12,tweleve);
     getLS(inputHr12);
     
 });
 
-oneBtns.on("click", function() { 
+oneBtn.on("click", function() { 
     setLS(inputHr1,one);
     getLS(inputHr1);
     
 });
 
-twoBtns.on("click", function() { 
+twoBtn.on("click", function() { 
     setLS(inputHr2, two);
     getLS(inputHr2);
     
 });
 
 
-threeBtns.on("click", function() { 
+threeBtn.on("click", function() { 
     setLS(inputHr3, three);
     getLS(inputHr3);
     
 });
 
-fourBtns.on("click", function() { 
+fourBtn.on("click", function() { 
     setLS(inputHr4,four);
     getLS(inputHr4);
     
 });
 
-fiveBtns.on("click", function() { 
+fiveBtn.on("click", function() { 
     setLS(inputHr5, five);
     getLS(inputHr5);
     
@@ -151,3 +151,5 @@ function storetoLS(key,value){
     let valLS=getLS(key);
     console.log(valsLS)
 }
+
+//not parsing through the values correctly
