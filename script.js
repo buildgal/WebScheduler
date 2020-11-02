@@ -33,36 +33,108 @@ for (let i=0; i<timeSlot.length; i++){
 
 
 //Local Storage: when you update something on the form and refresh the page it saves 
-//need an onclick function 
-//key and value from the local stroage 
-//display the local storage 
-//lets firs save the first button 
 
-let saveBtn= $(".input-group-append");
-let inputSlot= $(".form-control"); //textbox
-console.log(inputSlot+"input");
-let timeBtn= $(".input-group-text");//this  is what I am passing in on 55  64  
-console.log(timeBtn +"times");
+let nineBtns=$("#nineBtn");
+let tenBtn=$("#tenBtn");
+let elevenBtn=$("#elevenBtn");
 
-let key=timeBtn.value;
-console.log(key,"key");
-let value=inputSlot.value;
+let twelveBtn=$("#twelveBtn");
+let oneBtn=$("#oneBtn");
+let twoBtn=$("#twoBtn");
+
+let threeBtn=$("#threeBtn");
+let fourBtn=$("#fourBtn");
+let fiveBtn=$("#fiveBtn");
+
+
+
+//getting all text
+let nine=$("#0");
+let ten=$("#1");
+let eleven=$("#2");
+console.log(eleven);
+
+let twelve=$("#3");
+let one=$("#4");
+let two=$("#5");
+
+let three=$("#6");
+let four=$("#7");
+let five=$("#8");
+
+//getting all the keys
+
+let inputHr9=9;
+let inputHr10=10;
+let inputHr11=11;
+let inputHr12=12;
+let inputHr1=1;
+let inputHr2=2;
+let inputHr3=3;
+let inputHr4=4;
+let inputHr5=5;
+ 
 window.localStorage;
 
-
-saveBtn.on("click", function() { //find the value of time here , and the description=  two items need to be set to the
-    console.log(inputSlot, 'INPUT SLOT');    
-    setLS(timeBtn, inputSlot);//passing in a whole list of keys 
-    getLS(timeBtn);
-    storeInLocalStorage(timeBtn, inputSlot);
-
-
-
+nineBtns.on("click", function() { 
+    setLS(inputHr9,nine);
+    getLS(inputHr9);
+    
 });
+
+tenBtns.on("click", function() { 
+    setLS(inputHr10,ten);
+    getLS(inputHr10);
+    
+});
+
+elevenBtns.on("click", function() { 
+    setLS(inputHr11, eleven);
+    getLS(inputHr11);
+    
+});
+
+
+tweleveBtns.on("click", function() { 
+    setLS(inputHr12,tweleve);
+    getLS(inputHr12);
+    
+});
+
+oneBtns.on("click", function() { 
+    setLS(inputHr1,one);
+    getLS(inputHr1);
+    
+});
+
+twoBtns.on("click", function() { 
+    setLS(inputHr2, two);
+    getLS(inputHr2);
+    
+});
+
+
+threeBtns.on("click", function() { 
+    setLS(inputHr3, three);
+    getLS(inputHr3);
+    
+});
+
+fourBtns.on("click", function() { 
+    setLS(inputHr4,four);
+    getLS(inputHr4);
+    
+});
+
+fiveBtns.on("click", function() { 
+    setLS(inputHr5, five);
+    getLS(inputHr5);
+    
+});
+
 
 //setting the local storage 
 function setLS(key,value){
-    //console.log('THE KEY IS:', key);
     window.localStorage.setItem(key, JSON.stringify(value));
 
 }
@@ -73,4 +145,9 @@ function getLS(key){
     let setString= JSON.parse(value);
     return setString;
 
+}
+
+function storetoLS(key,value){
+    let valLS=getLS(key);
+    console.log(valsLS)
 }
