@@ -39,17 +39,20 @@ for (let i=0; i<timeSlot.length; i++){
 //lets firs save the first button 
 
 let saveBtn= $(".input-group-append");
-let inputSlot= $(".form-control");
-let timeBtn= $(".input-group-text");
+let inputSlot= $(".form-control"); //textbox
+console.log(inputSlot+"input");
+let timeBtn= $(".input-group-text");//this  is what I am passing in on 55  64  
+console.log(timeBtn +"times");
 
 let key=timeBtn.value;
+console.log(key,"key");
 let value=inputSlot.value;
 window.localStorage;
 
 
-saveBtn.on("click", function() {
-    
-    setLS(timeBtn, inputSlot);
+saveBtn.on("click", function() { //find the value of time here , and the description=  two items need to be set to the
+    console.log(inputSlot, 'INPUT SLOT');    
+    setLS(timeBtn, inputSlot);//passing in a whole list of keys 
     getLS(timeBtn);
     storeInLocalStorage(timeBtn, inputSlot);
 
@@ -59,6 +62,7 @@ saveBtn.on("click", function() {
 
 //setting the local storage 
 function setLS(key,value){
+    //console.log('THE KEY IS:', key);
     window.localStorage.setItem(key, JSON.stringify(value));
 
 }
