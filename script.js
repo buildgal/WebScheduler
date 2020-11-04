@@ -35,6 +35,8 @@ for (let i=0; i<timeSlot.length; i++){
 //Local Storage: when you update something on the form and refresh the page it saves 
 
 let nineBtns=$("#nineBtn");
+
+
 let tenBtn=$("#tenBtn");
 let elevenBtn=$("#elevenBtn");
 
@@ -52,7 +54,6 @@ let fiveBtn=$("#fiveBtn");
 let nine=$("#0");
 let ten=$("#1");
 let eleven=$("#2");
-console.log(eleven);
 
 let twelve=$("#3");
 let one=$("#4");
@@ -64,33 +65,42 @@ let five=$("#8");
 
 //getting all the keys
 
-let inputHr9=9;
-let inputHr10=10;
-let inputHr11=11;
-let inputHr12=12;
-let inputHr1=1;
-let inputHr2=2;
-let inputHr3=3;
-let inputHr4=4;
-let inputHr5=5;
+let inputHr9="9";
+let inputHr10="10";
+let inputHr11="11";
+let inputHr12="12";
+let inputHr1="1";
+let inputHr2="2";
+let inputHr3="3";
+let inputHr4="4";
+let inputHr5="5";
  
 window.localStorage;
 
 nineBtns.on("click", function() { 
-    setLS(inputHr9,nine);
+
     getLS(inputHr9);
-    
+    setLS(inputHr9,nine);
+
 });
 
 tenBtn.on("click", function() { 
-    setLS(inputHr10,ten);
     getLS(inputHr10);
+    setLS(inputHr10,ten);
+    //console.log(inputHr10+"key");
+    //console.log(ten+"input");
+
     
 });
 
 elevenBtn.on("click", function() { 
     setLS(inputHr11, eleven);
     getLS(inputHr11);
+    //console.log(inputHr10);
+    //console.log(ten);
+    //alert("i work");
+
+
     
 });
 
@@ -147,9 +157,5 @@ function getLS(key){
 
 }
 
-function storetoLS(key,value){
-    let valLS=getLS(key);
-    console.log(valsLS)
-}
 
 //not parsing through the values correctly
