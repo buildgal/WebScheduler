@@ -1,4 +1,4 @@
-# WebScheduler
+
 # WebScheduler
 In I built a work day scheduler. Using HTML, CSS, jQuery, and Bootstrap. The scheduler is dynamic and uses the current date.
 
