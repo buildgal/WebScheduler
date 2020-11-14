@@ -78,70 +78,58 @@ let inputHr5="5";
 window.localStorage;
 
 nineBtns.on("click", function() { 
-
     getLS(inputHr9);
-    setLS(inputHr9,nine);
+    setLS(inputHr9,nine.val());
+    console.log(nine.val());
 
 });
 
 tenBtn.on("click", function() { 
     getLS(inputHr10);
-    setLS(inputHr10,ten);
-    //console.log(inputHr10+"key");
-    //console.log(ten+"input");
-
-    
+    setLS(inputHr10, ten.val());   
 });
 
 elevenBtn.on("click", function() { 
-    setLS(inputHr11, eleven);
     getLS(inputHr11);
-    //console.log(inputHr10);
-    //console.log(ten);
-    //alert("i work");
-
-
-    
+    setLS(inputHr11, eleven.val());
 });
 
 
 twelveBtn.on("click", function() { 
-    setLS(inputHr12,tweleve);
     getLS(inputHr12);
-    
+    setLS(inputHr12, tweleve.val());
 });
 
 oneBtn.on("click", function() { 
-    setLS(inputHr1,one);
     getLS(inputHr1);
+    setLS(inputHr1, one.val());
     
 });
 
 twoBtn.on("click", function() { 
-    setLS(inputHr2, two);
     getLS(inputHr2);
+    setLS(inputHr2, two.val());
     
 });
 
 
 threeBtn.on("click", function() { 
-    setLS(inputHr3, three);
     getLS(inputHr3);
+    setLS(inputHr3, three.val());
     
 });
 
 fourBtn.on("click", function() { 
-    setLS(inputHr4,four);
     getLS(inputHr4);
+    setLS(inputHr4, four.val());
     
 });
 
 fiveBtn.on("click", function() { 
-    setLS(inputHr5, five);
     getLS(inputHr5);
+    setLS(inputHr5, five.val());
     
 });
-
 
 //setting the local storage 
 function setLS(key,value){
