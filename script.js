@@ -147,3 +147,5 @@ function getLS(key){
 
 
 //not parsing through the values correctly
+
+//I finally figured out local storage and fixed it 
